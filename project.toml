@@ -1,0 +1,15 @@
+[project]
+name = "ComfyUI-Seedream4API"
+description = "ComfyUI node for Seedream 4 image generation via Replicate API with support for text-to-image and image-to-image generation"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["torch>=1.13.0", "numpy>=1.21.0", "Pillow>=9.0.0", "requests>=2.25.0", "replicate=1.0.7"]
+
+[project.urls]
+Repository = "https://github.com/yourusername/ComfyUI-Seedream4API"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "saganaki22"
+DisplayName = "Seedream4 Replicate"
+Icon = "https://avatars.githubusercontent.com/u/84208527"
