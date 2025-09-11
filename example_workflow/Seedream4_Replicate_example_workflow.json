@@ -1,8 +1,8 @@
 {
   "id": "cd493e27-dd63-4c70-98ce-a77f7ffcc1e3",
   "revision": 0,
-  "last_node_id": 45,
-  "last_link_id": 43,
+  "last_node_id": 46,
+  "last_link_id": 46,
   "nodes": [
     {
       "id": 18,
@@ -292,42 +292,6 @@
       "widgets_values": []
     },
     {
-      "id": 12,
-      "type": "SaveImage",
-      "pos": [
-        2658.646240234375,
-        296.29034423828125
-      ],
-      "size": [
-        749.2113037109375,
-        1052.176025390625
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 41
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.56",
-        "Node name for S&R": "SaveImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.1",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "Seedream4/$(date +'%Y-%m-%d_%H-%M-%S')"
-      ]
-    },
-    {
       "id": 2,
       "type": "LoadImage",
       "pos": [
@@ -471,7 +435,7 @@
           "name": "",
           "type": "IMAGE",
           "links": [
-            43
+            45
           ]
         }
       ],
@@ -530,15 +494,51 @@
       ]
     },
     {
-      "id": 45,
+      "id": 12,
+      "type": "SaveImage",
+      "pos": [
+        2658.646240234375,
+        296.29034423828125
+      ],
+      "size": [
+        749.2113037109375,
+        1052.176025390625
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 46
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Seedream4/$(date +'%Y-%m-%d_%H-%M-%S')"
+      ]
+    },
+    {
+      "id": 46,
       "type": "Seedream4_Replicate",
       "pos": [
-        2206.379150390625,
-        345.0748291015625
+        2195.341796875,
+        356.1415100097656
       ],
       "size": [
         400,
-        304
+        280
       ],
       "flags": {},
       "order": 12,
@@ -548,7 +548,7 @@
           "name": "image_input",
           "shape": 7,
           "type": "IMAGE",
-          "link": 43
+          "link": 45
         }
       ],
       "outputs": [
@@ -556,41 +556,26 @@
           "name": "images",
           "type": "IMAGE",
           "links": [
-            41
+            46
           ]
         }
       ],
       "properties": {
-        "Node name for S&R": "Seedream4_Replicate",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "api_key": true,
-            "prompt": true,
-            "size_preset": true,
-            "width": true,
-            "height": true,
-            "max_images": true,
-            "sequential_image_generation": true,
-            "seed": true,
-            "control_after_generate": true
-          },
-          "version": "7.1",
-          "input_ue_unconnectable": {}
-        }
+        "cnr_id": "comfyui-seedream4api",
+        "ver": "1.0.0",
+        "Node name for S&R": "Seedream4_Replicate"
       },
       "widgets_values": [
         "",
-        "make einstein riding a horse on the moon",
-        "1728x2304 (3:4)",
+        "",
+        "2048x2048 (1:1)",
         2048,
         2048,
         1,
         "disabled",
-        2013421803,
-        "fixed"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
+        -1,
+        "randomize"
+      ]
     }
   ],
   "links": [
@@ -651,18 +636,18 @@
       "*"
     ],
     [
-      41,
       45,
+      38,
       0,
-      12,
+      46,
       0,
       "IMAGE"
     ],
     [
-      43,
-      38,
+      46,
+      46,
       0,
-      45,
+      12,
       0,
       "IMAGE"
     ]
@@ -698,10 +683,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 2.2098061762821635,
+      "scale": 0.7041123489301834,
       "offset": [
-        -1942.4693122100389,
-        -216.4511910133823
+        -1177.481326983332,
+        -13.318808728159183
       ]
     },
     "frontendVersion": "1.25.11",
