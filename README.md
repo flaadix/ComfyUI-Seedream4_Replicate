@@ -63,3 +63,11 @@ pip install -r requirements.txt
 ## License
 
 MIT License - see LICENSE file for details
+
+---
+
+<p align="center">
+<a href="https://replicate.com/" target="_blank">
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/ef0e9c4c-5174-41f4-a956-0d2460a34820" />
+</a>
+</p>
