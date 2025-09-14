@@ -8,6 +8,16 @@ import os
 import folder_paths
 import replicate
 import time
+from colorama import Fore, Style, init
+import logging
+init(autoreset=True)
+
+# Disable verbose HTTP logging
+logging.getLogger("requests").setLevel(logging.WARNING)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+logging.getLogger("replicate").setLevel(logging.WARNING)
+logging.getLogger("http.client").setLevel(logging.WARNING)
+logging.getLogger("httpx").setLevel(logging.WARNING)
 
 class Seedream4_Replicate:
     @classmethod
@@ -218,8 +228,21 @@ class Seedream4_Replicate:
             
             # Step 2: Waiting for processing to start
             print("Initializing generation... (50%)")
+            start_time = time.time()
+            last_status_time = time.time()
+            timeout_seconds = 600  # 10 minutes timeout
+            status_interval = 10  # Show status every 10 seconds
+
             while self.current_prediction.status == "starting":
-                time.sleep(2)
+                if time.time() - start_time > timeout_seconds:
+                    raise ValueError(f"Timeout reached while waiting for prediction to start ({timeout_seconds} seconds)")
+
+                # Show status every 10 seconds
+                if time.time() - last_status_time >= status_interval:
+                    print(f"{Fore.GREEN}Processing API request{Style.RESET_ALL}")
+                    last_status_time = time.time()
+
+                time.sleep(1)  # Check more frequently, but show status less often
                 try:
                     self.current_prediction.reload()
                 except Exception as reload_error:
@@ -230,7 +253,15 @@ class Seedream4_Replicate:
             if self.current_prediction.status == "processing":
                 print("Generating image... (75%)")
                 while self.current_prediction.status == "processing":
-                    time.sleep(2)
+                    if time.time() - start_time > timeout_seconds:
+                        raise ValueError(f"Timeout reached while processing prediction ({timeout_seconds} seconds)")
+
+                    # Show status every 10 seconds
+                    if time.time() - last_status_time >= status_interval:
+                        print(f"{Fore.GREEN}Processing API Request{Style.RESET_ALL}")
+                        last_status_time = time.time()
+
+                    time.sleep(1)  # Check more frequently, but show status less often
                     try:
                         self.current_prediction.reload()
                     except Exception as reload_error:
